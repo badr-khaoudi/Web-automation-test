@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.581">
+<testcase classname="Feature to test the login functionality" name="Check login successfully" time="3.419">
+<failure message="Returned value cannot be converted to WebElement: {stacktrace=Backtrace:&#10;&#9;Ordinal0 [0x0073E7D3+124883]&#10;&#9;Ordinal0 [0x0073E7B1+124849]&#10;&#9;GetHandleVerifier [0x00988530+193488]&#10;&#9;GetHandleVerifier [0x009A4B2C+309708]&#10;&#9;GetHandleVerifier [0x009C15F7+427159]&#10;&#9;GetHandleVerifier [0x009BF7A1+419393]&#10;&#9;GetHandleVerifier [0x009BF2F4+418196]&#10;&#9;GetHandleVerifier [0x0096EE04+89252]&#10;&#9;GetHandleVerifier [0x0096F2F6+90518]&#10;&#9;GetHandleVerifier [0x0096F601+91297]&#10;&#9;GetHandleVerifier [0x00A631EC+1089676]&#10;&#9;GetHandleVerifier [0x00A617C9+1082985]&#10;&#9;GetHandleVerifier [0x00A613A3+1081923]&#10;&#9;GetHandleVerifier [0x00B5D9FD+2115741]&#10;&#9;Ordinal0 [0x0088B82E+1488942]&#10;&#9;Ordinal0 [0x00825A7D+1071741]&#10;&#9;GetHandleVerifier [0x0096EB9B+88635]&#10;&#9;GetHandleVerifier [0x0096E56E+87054]&#10;&#9;GetHandleVerifier [0x00B65D0C+2149292]&#10;&#9;BaseThreadInitThunk [0x76A8FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x778A7A7E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x778A7A4E+238]&#10;, error=invalid session id, message=invalid session id}&#10;Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'&#10;System info: host: 'LAPTOP-9Q7NUHUF', ip: '172.18.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[Given Browser is open.......................................................passed
+And user is on login page...................................................passed
+When user enters username and password......................................failed
+And clicks on login button..................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {stacktrace=Backtrace:
+	Ordinal0 [0x0073E7D3+124883]
+	Ordinal0 [0x0073E7B1+124849]
+	GetHandleVerifier [0x00988530+193488]
+	GetHandleVerifier [0x009A4B2C+309708]
+	GetHandleVerifier [0x009C15F7+427159]
+	GetHandleVerifier [0x009BF7A1+419393]
+	GetHandleVerifier [0x009BF2F4+418196]
+	GetHandleVerifier [0x0096EE04+89252]
+	GetHandleVerifier [0x0096F2F6+90518]
+	GetHandleVerifier [0x0096F601+91297]
+	GetHandleVerifier [0x00A631EC+1089676]
+	GetHandleVerifier [0x00A617C9+1082985]
+	GetHandleVerifier [0x00A613A3+1081923]
+	GetHandleVerifier [0x00B5D9FD+2115741]
+	Ordinal0 [0x0088B82E+1488942]
+	Ordinal0 [0x00825A7D+1071741]
+	GetHandleVerifier [0x0096EB9B+88635]
+	GetHandleVerifier [0x0096E56E+87054]
+	GetHandleVerifier [0x00B65D0C+2149292]
+	BaseThreadInitThunk [0x76A8FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778A7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778A7A4E+238]
+, error=invalid session id, message=invalid session id}
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'LAPTOP-9Q7NUHUF', ip: '172.18.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at StepDefinitions.QuickpostSteps.user_enters_username_and_password(QuickpostSteps.java:47)
+	at ✽.user enters username and password(file:///C:/Users/BADR/eclipse-workspace/AQL-Testing/TestAutomation/src/test/resources/Features/Login.feature:7)
+Caused by: java.lang.ClassCastException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to org.openqa.selenium.WebElement
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at StepDefinitions.QuickpostSteps.user_enters_username_and_password(QuickpostSteps.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:697)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:1004)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:728)
+	at org.testng.TestRunner.run(TestRunner.java:629)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:129)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:113)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></failure>
+</testcase>
+</testsuite>

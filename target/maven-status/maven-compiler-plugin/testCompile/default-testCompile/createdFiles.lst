@@ -1,0 +1,7 @@
+StepDefinitions\ActionSteps.class
+StepDefinitions\ArticleSteps.class
+StepDefinitions\EditingSteps.class
+StepDefinitions\CheckingContentSteps.class
+StepDefinitions\DeletingSteps.class
+Runners\TestRunner.class
+StepDefinitions\QuickpostSteps.class
