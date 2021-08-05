@@ -1,5 +1,6 @@
 Feature: Feature to deal with the react app
   
+  	@SmokeTest
 	Scenario: Check react app login
 		Given testing the react app
 		And user is on the loginPage of the react app
